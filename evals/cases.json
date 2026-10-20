@@ -1,0 +1,35 @@
+[
+  {
+    "id": "revenue-2025",
+    "question": "What was Northstar's revenue in 2025?",
+    "sources": [
+      {"id": "finance-p4", "page": 4, "text": "Northstar reported 2025 revenue of $12.4 million, up 18 percent year over year."},
+      {"id": "finance-p7", "page": 7, "text": "Operating expenses increased because the company opened a second support center."},
+      {"id": "people-p2", "page": 2, "text": "The company employed 86 people at the end of 2025."}
+    ],
+    "expected_sources": ["finance-p4"],
+    "expected_answer_terms": ["$12.4 million"]
+  },
+  {
+    "id": "expense-cause",
+    "question": "Why did operating expenses rise?",
+    "sources": [
+      {"id": "finance-p4", "page": 4, "text": "Northstar reported 2025 revenue of $12.4 million."},
+      {"id": "finance-p7", "page": 7, "text": "Operating expenses increased because the company opened a second support center."},
+      {"id": "people-p2", "page": 2, "text": "The company employed 86 people at the end of 2025."}
+    ],
+    "expected_sources": ["finance-p7"],
+    "expected_answer_terms": ["second support center"]
+  },
+  {
+    "id": "exact-code",
+    "question": "Which control is identified as SEC-104?",
+    "sources": [
+      {"id": "security-p3", "page": 3, "text": "SEC-104 requires quarterly access reviews for all privileged accounts."},
+      {"id": "security-p5", "page": 5, "text": "Incident response exercises take place twice per year."},
+      {"id": "security-p8", "page": 8, "text": "Encryption keys rotate automatically every ninety days."}
+    ],
+    "expected_sources": ["security-p3"],
+    "expected_answer_terms": ["quarterly access reviews", "privileged accounts"]
+  }
+]
